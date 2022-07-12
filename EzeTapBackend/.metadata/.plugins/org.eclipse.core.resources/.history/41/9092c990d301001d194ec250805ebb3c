@@ -1,0 +1,35 @@
+package com.bookmyshow.model;
+
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+@JsonSerialize
+public class ChartDataResponse {
+
+	private String chartLable;
+	private int chartValue;
+	
+	
+	/**
+	 * @param chartLable
+	 * @param chartValue
+	 */
+	public ChartDataResponse(String chartLable, int chartValue) {
+		this.chartLable = chartLable;
+		this.chartValue = chartValue;
+	}
+	
+	public String getChartLable() {
+		return chartLable;
+	}
+	public void setChartLable(String chartLable) {
+		this.chartLable = chartLable;
+	}
+	public int getChartValue() {
+		return chartValue;
+	}
+	public void setChartValue(int chartValue) {
+		this.chartValue = chartValue;
+	}
+	
+	
+}

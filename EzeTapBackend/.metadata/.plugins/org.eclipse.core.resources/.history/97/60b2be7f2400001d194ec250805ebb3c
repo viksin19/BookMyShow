@@ -1,0 +1,15 @@
+package com.bookmyshow.model;
+
+import java.util.Set;
+
+public class MovieTheatre {
+
+	private long theatreId;
+	private String theatreName;
+	private String theatreAddress;
+	private int seatCount;
+	
+	private Set<String> movieTimings;
+	private Set<MoviePrice> moviePrice;
+	
+}

@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package com.bookmyshow.serviceImpl;
+
+import com.bookmyshow.service.MovieService;
+
+/**
+ * @author jai12
+ *
+ */
+public class MovieServiceImpl implements MovieService {
+
+	@Override
+	public String addMovieDetails() {
+		// TODO Auto-generated method stub
+		return "Movie got added successfully.";
+	}
+
+}

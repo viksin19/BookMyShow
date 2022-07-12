@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+package com.bookmyshow.service;
+
+/**
+ * @author jai12
+ *
+ */
+public interface MovieService {
+
+	public String addMovieDetails();
+}

@@ -1,0 +1,53 @@
+/**
+ * 
+ */
+package com.bookmyshow.serviceImpl;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bookmyshow.entity.Cast;
+import com.bookmyshow.entity.Genre;
+import com.bookmyshow.entity.Language;
+import com.bookmyshow.entity.Location;
+import com.bookmyshow.entity.MovieData;
+import com.bookmyshow.model.MovieAddRequestBody;
+import com.bookmyshow.repository.MovieRepo;
+import com.bookmyshow.service.MovieService;
+
+/**
+ * @author jai12
+ *
+ */
+@Service
+public class MovieServiceImpl implements MovieService {
+
+	@Autowired
+	private MovieRepo movieRepo;
+	
+	@Override
+	public String addMovieDetails(MovieAddRequestBody movieAddReq) {
+		try {
+			addMovie(movieAddReq);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "Error:: while saving data.";
+			
+		}
+		return "Movie got added successfully.";
+	}
+
+	private void addMovie(MovieAddRequestBody movieAddReq) {
+		movieAddReq.getMovieList().stream().map(mvoie->{
+			MovieData movieData = new MovieData();
+			movieData.setMovieName();
+			return movieData;
+		}).forEach(movieData->movieRepo.save(movieData));
+//		MovieData movieData = new MovieData();
+//		movieRepo.save(movieData);
+	}
+}

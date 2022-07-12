@@ -1,0 +1,33 @@
+package com.bookmyshow.model;
+
+public class MovieLanguage {
+
+	private String locationId;
+	private String city;
+	
+	
+	
+	/**
+	 * @param locationId
+	 * @param city
+	 */
+	public MovieLanguage(String locationId, String city) {
+		super();
+		this.locationId = locationId;
+		this.city = city;
+	}
+	public String getLocationId() {
+		return locationId;
+	}
+	public void setLocationId(String locationId) {
+		this.locationId = locationId;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	
+	
+}

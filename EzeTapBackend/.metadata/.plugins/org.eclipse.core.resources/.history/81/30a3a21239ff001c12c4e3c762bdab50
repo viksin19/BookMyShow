@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.bookmyshow.repository;
+
+/**
+ * @author jai12
+ *
+ */
+public interface MovieRepository {
+
+}

@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.bookmyshow.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+/**
+ * @author jai12
+ *
+ */
+public interface GenreRepo extends JpaRepository<T, ID> {
+
+}

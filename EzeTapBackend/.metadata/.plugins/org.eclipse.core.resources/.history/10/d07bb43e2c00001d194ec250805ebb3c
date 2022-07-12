@@ -1,0 +1,15 @@
+package com.bookmyshow.util;
+
+import java.util.function.Function;
+
+import com.bookmyshow.entity.Cast;
+
+public class CastMapper {
+	public static Function<String, Cast> CastNameToCastEntity(){
+		return (String castName)->{
+			Cast cast = new Cast();
+			cast.setCastName(castName);
+			return cast;
+		};
+	}
+}

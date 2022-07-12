@@ -1,0 +1,9 @@
+package com.bookmyshow.entity;
+
+import javax.persistence.EmbeddedId;
+
+public class MovieTheatreTiming {
+
+	@EmbeddedId
+	private MovieTheatreTimingId movieTheatreTimingId = new MovieTheatreTimingId();
+}

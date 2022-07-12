@@ -1,0 +1,90 @@
+/**
+ * 
+ */
+package com.bookmyshow.serviceImpl;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bookmyshow.entity.Cast;
+import com.bookmyshow.entity.Genre;
+import com.bookmyshow.entity.Language;
+import com.bookmyshow.entity.Location;
+import com.bookmyshow.entity.MovieData;
+import com.bookmyshow.repository.MovieRepo;
+import com.bookmyshow.service.MovieService;
+
+/**
+ * @author jai12
+ *
+ */
+@Service
+public class MovieServiceImpl implements MovieService {
+
+	@Autowired
+	private MovieRepo movieRepo;
+	
+	@Override
+	public String addMovieDetails() {
+		try {
+			addMovie();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "Error:: while saving data.";
+			
+		}
+		return "Movie got added successfully.";
+	}
+
+	private void addMovie() {
+		MovieData movieData = new MovieData();
+		movieData.setMovieName("Thor: Love and Thunder");
+		movieData.setMovieLikes(90);
+		movieData.setMovieRating(4);
+		movieData.setMovieUrl("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHXV5at6mvLIF852fvIA5jeUi6bVYs8swuCPUCRWdRxWp0sr5Q");
+		movieData.setYear("2022");
+		
+		Set<Cast> castSet = new HashSet<>();
+		Set<Language> language = new HashSet<>();
+		Set<Genre> genreSet = new HashSet<>();
+		Set<Location> location = new HashSet<>();
+		
+		List<String> castList = Arrays.asList("Chris Hemsworth", "Christian Bale","Taika Waititi","Natalie Portman","Tessa Thompson");
+		List<String> genreList = Arrays.asList("Action","Adventure","Fantasy");
+		List<String> languageList = Arrays.asList("English","Kannada","Tamil","Telugu","Hindi");
+		List<String> locationList = Arrays.asList("Begaluru","Mumbai","Delhi","Hyderabad","Pune","Chennai");
+		
+		castList.forEach(cast->{
+			Cast item = new Cast();
+			item.setCastName(cast);
+			castSet.add(item);
+		});
+		
+		genreList.forEach(genre->{
+			Genre gen = new Genre();
+			gen.setGenre(genre);
+			genreSet.add(gen);
+		});
+		
+		languageList.forEach(lan->{
+			Language item = new Language();
+			item.setLanguage(lan);
+			language.add(item);
+		});
+		
+		locationList.forEach(city->{
+			Location item = new Location();
+			item.setCity(city);
+			location.add(item);
+		});
+		movieData.setMovieGenre(genreSet);
+		movieData.setMovieLanguages(language);
+		movieData.setMovieLocations(location);
+		movieData.setMovieCasts(castSet);
+		movieRepo.save(movieData);
+	}
+}

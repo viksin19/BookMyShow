@@ -1,0 +1,22 @@
+package com.bookmyshow.util;
+
+import java.util.function.Function;
+
+import com.bookmyshow.entity.MovieTheatrePrice;
+import com.bookmyshow.model.MoviePrice;
+
+
+public class PriceMapper {
+
+	public static Function<MoviePrice,MovieTheatrePrice > moviePriceToPriceEntity() {
+		
+		return (price)->{
+			MovieTheatrePrice movieTheatrePrice = new MovieTheatrePrice();
+			movieTheatrePrice.setSeatType(price.getSeatType());
+			movieTheatrePrice.setSeatPrice(price.getSeatPrice());
+			
+			return movieTheatrePrice;
+		};
+	}
+
+}

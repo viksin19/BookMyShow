@@ -1,0 +1,21 @@
+package com.bookmyshow.util;
+
+import java.util.function.Function;
+
+import com.bookmyshow.entity.Theatre;
+import com.bookmyshow.model.MovieTheatre;
+
+public class TheatreMapper {
+
+	public static Function<MovieTheatre, Theatre> movieTheatreToTheatre() {
+		
+		return (movieTheatre)->{
+			Theatre theatre = new Theatre();
+			theatre.setTheatreName(movieTheatre.getTheatreName());
+			theatre.setTheatreAddress(movieTheatre.getTheatreAddress());
+			
+			return theatre;
+		};
+	}
+
+}

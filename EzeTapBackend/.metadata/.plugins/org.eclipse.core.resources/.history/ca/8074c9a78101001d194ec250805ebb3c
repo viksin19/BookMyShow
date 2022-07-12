@@ -1,0 +1,23 @@
+package com.bookmyshow.util;
+
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+import com.bookmyshow.entity.Location;
+import com.bookmyshow.model.MovieLocation;
+
+public class LocationMapper {
+
+	public static Function<MovieLocation, Location> locationToEnity() {
+		// TODO Auto-generated method stub
+		return (movieLocation)->{
+			Location location = new Location();
+			location.setCity(movieLocation.getCity());
+			location.setTheatreList(movieLocation.getTheatreList().stream()
+					.map(TheatreMapper.movieTheatreToTheatre())
+					.collect(Collectors.toSet()));
+			return location;
+		};
+	}
+
+}

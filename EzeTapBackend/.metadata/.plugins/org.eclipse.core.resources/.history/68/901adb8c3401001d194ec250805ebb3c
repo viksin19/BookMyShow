@@ -1,0 +1,32 @@
+package com.bookmyshow.serviceImpl;
+
+import com.bookmyshow.model.DashboardCardResponse;
+import com.bookmyshow.service.DashboardService;
+
+public class DashboardServiceImpl implements DashboardService {
+
+	@Override
+	public DashboardCardResponse getGenreCardData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DashboardCardResponse geLanguageCardData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DashboardCardResponse getLocationCardData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DashboardCardResponse getMoviesCardData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

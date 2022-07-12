@@ -1,0 +1,1352 @@
+{
+ "movieList":[
+ {
+	 "movieName":"Vikram",
+	 "movieRating":4,
+	 "movieLikes":9049,
+	 "imgUrl":"https://m.media-amazon.com/images/M/MV5BOTYxOWU3OWYtOGM4NC00NDhlLTlmZTYtMGUxM2YwZmFhOGFlXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
+	 "movieYear":"2022",
+	 "movieCast":["Kamal Haasan","Fahad Faasil","Vijay Sethupathi"],
+	 "movieGenre":["Action","Thriller"],
+	 "movieLanguage":["Tamil","Hindi","Telugu","Kannada","Malyalam"],
+	 "movieDuration":173,
+	 "movieLocation":[
+	 {
+	 "city":"Bengaluru",
+	 "theatreList":[
+	 {
+		"theatreName":"Cinepolis: Binnypet Mall",
+		"seatCount":100,
+		"theatreAddress":"ETA Namma Mall, Binneypet, Magadi Road, Bengaluru, Karnataka 560023, India",
+		"movieTimings":["2:30 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Nexus Shantiniketan, Bengaluru",
+		"seatCount":100,
+		"theatreAddress":"3rd Floor, Prestige Shantiniketan Mall, Opposite Manipal Hospital, ITPL Main Road, Whitefield, Bengaluru, Karnataka 560067, India",
+		"movieTimings":["2:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"PVR: Orion Mall, Dr Rajkumar Road",
+		"seatCount":100,
+		"theatreAddress":"Orion Mall, 3rd Floor, Brigade Gateway, Dr. Rajkumar Road, Malleshwaram West, Bengaluru, Karnataka 560055, India",
+		"movieTimings":["3:20 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Prime",
+			"seatPrice":280
+		},
+		{
+			"seatType":"Classic",
+			"seatPrice":240
+		}
+		]
+	 },
+	 {
+		"theatreName":"PVR: Phoenix Marketcity Mall, Whitefield Road",
+		"seatCount":100,
+		"theatreAddress":"Phoenix Market City Mall, Whitefield Road, Mahadevapura, Krishnarajapura, Devasandra Industrial Estate, Bengaluru, Karnataka 560048, India",
+		"movieTimings":["7:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Prime",
+			"seatPrice":280
+		},
+		{
+			"seatType":"Classic",
+			"seatPrice":240
+		}
+		]
+	 }
+	 ]
+	 },
+    {
+	 "city":"Chennai",
+	 "theatreList":[
+	 {
+		"theatreName":"AGS Cinemas: T. Nagar",
+		"seatCount":90,
+		"theatreAddress":"No: 24/1, GN Chetty Road, T. Nagar, Opposite Dr. M.G.R. Educational and Research Institute, Chennai, Tamil Nadu 600017, India",
+		"movieTimings":["10:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: BSR Mall, OMR, Thoraipakkam",
+		"seatCount":90,
+		"theatreAddress":"BSR Mall, Thoraipakkam, Seevaram, Oggiyamduraipakkam, Chennai, Tamil Nadu 600097, India",
+		"movieTimings":["2:30 PM","6:45 PM","10:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Chennai Citi Centre, Dr. RK Salai",
+		"seatCount":80,
+		"theatreAddress":"3rd Floor, Chennai Citi Center, Doctor Radha Krishnan Salai, Chennai, Tamil Nadu 600004, India",
+		"movieTimings":["9:20 AM","10:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: The Marina Mall, OMR",
+		"seatCount":80,
+		"theatreAddress":"3rd Floor, The Marina Mall, Old Mahabalipuram Road, Egatoor, Navalur, Chennai, Tamil Nadu 603103, India",
+		"movieTimings":["7:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 }
+	 ]
+    },
+	{
+	 "city":"Hyderabad",
+	 "theatreList":[
+	 {
+		"theatreName":"AMB Cinemas: Gachibowli",
+		"seatCount":90,
+		"theatreAddress":"Sarath City Capital Mall, Kondapur, Gachibowli Hyderabad, Telangana 500084, India",
+		"movieTimings":["9:30 AM","1:30 PM","4:00 PM","10:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Sudha Cinemas, Hyderabad",
+		"seatCount":90,
+		"theatreAddress":"Shah Ali Banda New Road, Rajpal Nagar, Sudha Theatre Road, Hyderabad, Telangana 500065, India",
+		"movieTimings":["2:30 PM","6:30 PM","10:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: GSM Mall, Hyderabad",
+		"seatCount":80,
+		"theatreAddress":"INOX Leisure Ltd, 4th floor, GSM Mall, Miyapur Main Road, Madinaguda, Hyderabad, Telangana 500049, India",
+		"movieTimings":["9:20 AM","10:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Maheshwari",
+		"seatCount":80,
+		"theatreAddress":"5th Floor, Maheshwari Parmeshwari Mall, Kachiguda Cross Roads, Hyderabad, Telangana 500027, India",
+		"movieTimings":["7:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 }
+	 ]
+    }
+	]
+	 
+ },
+  {
+	 "movieName":"Thor: Love and Thunder",
+	 "movieRating":4,
+	 "movieLikes":23449,
+	 "imgUrl":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHXV5at6mvLIF852fvIA5jeUi6bVYs8swuCPUCRWdRxWp0sr5Q",
+	 "movieYear":"2022",
+	 "movieCast":["Chris Hemsworth", "Christian Bale","Taika Waititi","Natalie Portman","Tessa Thompson"],
+	 "movieGenre":["Action","Adventure","Fantasy"],
+	 "movieLanguage":["English","Tamil","Hindi","Telugu"],
+	 "movieDuration":119,
+	 "movieLocation":[
+	 {
+	 "city":"Bengaluru",
+	 "theatreList":[
+	 {
+		"theatreName":"Cinepolis: Binnypet Mall",
+		"seatCount":100,
+		"theatreAddress":"ETA Namma Mall, Binneypet, Magadi Road, Bengaluru, Karnataka 560023, India",
+		"movieTimings":["9:30 AM","1:30 PM","6:30 PM","9:45 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Nexus Shantiniketan, Bengaluru",
+		"seatCount":100,
+		"theatreAddress":"3rd Floor, Prestige Shantiniketan Mall, Opposite Manipal Hospital, ITPL Main Road, Whitefield, Bengaluru, Karnataka 560067, India",
+		"movieTimings":["12:30 PM","3:00 PM","6:45 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"PVR: Orion Mall, Dr Rajkumar Road",
+		"seatCount":100,
+		"theatreAddress":"Orion Mall, 3rd Floor, Brigade Gateway, Dr. Rajkumar Road, Malleshwaram West, Bengaluru, Karnataka 560055, India",
+		"movieTimings":["9:00 AM","3:00 PM","6:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Prime",
+			"seatPrice":280
+		},
+		{
+			"seatType":"Classic",
+			"seatPrice":240
+		}
+		]
+	 },
+	 {
+		"theatreName":"PVR: Phoenix Marketcity Mall, Whitefield Road",
+		"seatCount":100,
+		"theatreAddress":"Phoenix Market City Mall, Whitefield Road, Mahadevapura, Krishnarajapura, Devasandra Industrial Estate, Bengaluru, Karnataka 560048, India",
+		"movieTimings":["7:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Prime",
+			"seatPrice":280
+		},
+		{
+			"seatType":"Classic",
+			"seatPrice":240
+		}
+		]
+	 }
+	 ]
+	 },
+    {
+	 "city":"Chennai",
+	 "theatreList":[
+	 {
+		"theatreName":"AGS Cinemas: T. Nagar",
+		"seatCount":90,
+		"theatreAddress":"No: 24/1, GN Chetty Road, T. Nagar, Opposite Dr. M.G.R. Educational and Research Institute, Chennai, Tamil Nadu 600017, India",
+		"movieTimings":["10:30 AM","2:30 PM","5:00 PM","10:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: BSR Mall, OMR, Thoraipakkam",
+		"seatCount":90,
+		"theatreAddress":"BSR Mall, Thoraipakkam, Seevaram, Oggiyamduraipakkam, Chennai, Tamil Nadu 600097, India",
+		"movieTimings":["12:30 PM","4:45 PM","8:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Chennai Citi Centre, Dr. RK Salai",
+		"seatCount":80,
+		"theatreAddress":"3rd Floor, Chennai Citi Center, Doctor Radha Krishnan Salai, Chennai, Tamil Nadu 600004, India",
+		"movieTimings":["9:30 AM","1:45 PM","3:30 PM","8:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: The Marina Mall, OMR",
+		"seatCount":80,
+		"theatreAddress":"3rd Floor, The Marina Mall, Old Mahabalipuram Road, Egatoor, Navalur, Chennai, Tamil Nadu 603103, India",
+		"movieTimings":["3:00 PM","7:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 }
+	 ]
+    },
+	{
+	 "city":"Hyderabad",
+	 "theatreList":[
+	 {
+		"theatreName":"AMB Cinemas: Gachibowli",
+		"seatCount":90,
+		"theatreAddress":"Sarath City Capital Mall, Kondapur, Gachibowli Hyderabad, Telangana 500084, India",
+		"movieTimings":["9:30 AM","1:30 PM","4:00 PM","10:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Sudha Cinemas, Hyderabad",
+		"seatCount":90,
+		"theatreAddress":"Shah Ali Banda New Road, Rajpal Nagar, Sudha Theatre Road, Hyderabad, Telangana 500065, India",
+		"movieTimings":["1:30 PM","5:30 PM","9:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: GSM Mall, Hyderabad",
+		"seatCount":80,
+		"theatreAddress":"INOX Leisure Ltd, 4th floor, GSM Mall, Miyapur Main Road, Madinaguda, Hyderabad, Telangana 500049, India",
+		"movieTimings":["9:20 AM","12:30 PM","4:30 PM","10:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Maheshwari",
+		"seatCount":80,
+		"theatreAddress":"5th Floor, Maheshwari Parmeshwari Mall, Kachiguda Cross Roads, Hyderabad, Telangana 500027, India",
+		"movieTimings":["9:30 AM","12:30 PM","3:00 PM","7:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 }
+	 ]
+    },	
+	{
+	 "city":"Pune",
+	 "theatreList":[
+	 {
+		"theatreName":"Carnival: Premier Plaza, Chinchwad",
+		"seatCount":20,
+		"theatreAddress":"Premier Plaza, Old Mumbai Pune Highway, Chinchwad, Near Cosmos Bank, Pune, Maharashtra 411049, India",
+		"movieTimings":["9:30 AM","1:30 PM","4:00 PM","10:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350,
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Seasons Mall, Pune",
+		"seatCount":60,
+		"theatreAddress":"3rd Floor, Seasons Mall, Magarpatta Police Station Road, Magarpatta City, Hadapsar, Pune, Maharashtra 411028, India",
+		"movieTimings":["1:30 PM","5:30 PM","9:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+		{
+			"seatType":"Premium",
+			"seatPrice":220
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Royal Heritage Mall, NIBM Ext",
+		"seatCount":90,
+		"theatreAddress":"Royale Heritage Mall, Mohammed Wadi, Next to Vibgyor International School, Pune, Maharashtra 411048, India",
+		"movieTimings":["4:30 PM","10:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"PVR: Phoenix Market City, Pune (4DX)",
+		"seatCount":60,
+		"theatreAddress":"2nd Floor, Phoenix Market City, Nagar Road, Viman Nagar, Clover Park, Near Baker Gauges, Pune, Maharashtra 411014, India",
+		"movieTimings":["9:30 AM","12:30 PM","3:00 PM","7:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Prime",
+			"seatPrice":550
+		}
+		]
+	 }
+	 ]
+    },
+	{
+	 "city":"Delhi",
+	 "theatreList":[
+	 {
+		"theatreName":"Carnival: TGIP Red Carpet",
+		"seatCount":10,
+		"theatreAddress":"Plot No-A-2, Sector 38 A, Maharaja Agrasen Marg, Noida, NCR 201301, India",
+		"movieTimings":["9:30 AM","1:30 PM","4:00 PM","10:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Smart Bharat Mall (Formerly Spice Mall)",
+		"seatCount":60,
+		"theatreAddress":"I-2, Near Metro Station Noida City Center, Sector 25A, Noida, NCR 201301, India",
+		"movieTimings":["1:30 PM","5:30 PM","9:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Omaxe Connaught Place Mall, Greater Noida",
+		"seatCount":20,
+		"theatreAddress":"2nd Floor, Omaxe Connaught Place Mall, Sector Beta-2, Greater Noida, NCR 201308, India",
+		"movieTimings":["9:20 AM","12:30 PM","4:30 PM","10:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX Eros One: Jangpura Extn",
+		"seatCount":37,
+		"theatreAddress":"Jangpura Extension, Block H, Near Central Market, Jangpura, Delhi, NCR 110014, India",
+		"movieTimings":["9:30 AM","12:30 PM","3:00 PM","7:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450,
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350,
+		}
+		]
+	 },
+	 {
+		"theatreName":"Delhi: PVR Director`s Cut, Ambience Mall",
+		"seatCount":80,
+		"theatreAddress":"Ambience Mall,Vasant Phase-2, Nelson Mandela Road, Delhi, NCR 110070, India",
+		"movieTimings":["9:30 AM","12:30 PM","3:00 PM","7:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Prime",
+			"seatPrice":350
+		}
+		]
+	 }
+	 ]
+    },
+	{
+	 "city":"Mumbai",
+	 "theatreList":[
+	 {
+		"theatreName":"Carnival: R Mall Mulund",
+		"seatCount":80,
+		"theatreAddress":"3rd Floor, R Mall, Lal Bahadur Shastri Marg, Kamgar Colony, Mulund (West), Mumbai, Maharashtra 400080, India",
+		"movieTimings":["9:30 AM","1:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Viviana Mall, Thane",
+		"seatCount":90,
+		"theatreAddress":"Viviana Mall, Eastern Express Highway, Laxmi Nagar, Thane (West), Thane, Maharashtra 400606, India",
+		"movieTimings":["1:30 PM","5:30 PM","9:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Neelyog, Ghatkopar (E)",
+		"seatCount":50,
+		"theatreAddress":"3rd Floor, Neelyog Square Mall, R. B. Mehta Road, Ghatkopar East, Mumbai, Maharashtra 400077, India",
+		"movieTimings":["9:20 AM","12:30 PM","4:30 PM","10:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: R-City, Ghatkopar",
+		"seatCount":70,
+		"theatreAddress":"3rd Floor, R City Mall, Lal Bahadur Shastri Marg, Ghatkopar West, Mumbai, Maharashtra 400086, India",
+		"movieTimings":["9:30 AM","12:30 PM","3:00 PM","7:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"PVR: Lodha Xperia, Palava",
+		"seatCount":8,
+		"theatreAddress":"3rd Floor, Xperia Mall, Kalyan-Shilphata Road, Opposit Lodha World School, Dombivali (E), Mumbai, Maharashtra 421204, India",
+		"movieTimings":["9:30 AM","12:30 PM","3:00 PM","7:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 }
+	 ]
+    },
+	{
+	 "city":"Ahmedabad",
+	 "theatreList":[
+	 {
+		"theatreName":"Cinemax: Shiv, Ahmedabad",
+		"seatCount":90,
+		"theatreAddress":"Opposite City Gold Cinema, Ashram Road, Near Kotak Mahindra Bank, Ahmedabad, Gujarat 380009, India",
+		"movieTimings":["9:30 AM","1:30 PM","4:00 PM","10:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Nexus Ahmedabad One",
+		"seatCount":90,
+		"theatreAddress":"3rd Floor, Alpha One Mall, Opp Vastrapur Lake, Ahmedabad, Gujarat 380015, India",
+		"movieTimings":["1:30 PM","5:30 PM","9:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+		{
+			"seatType":"Premium",
+			"seatPrice":220
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 }
+	 ]
+    }
+	],
+	 
+ },
+  {
+	 "movieName":"Rocketry",
+	 "movieRating":4,
+	 "movieLikes":2949,
+	 "imgUrl":"https://m.media-amazon.com/images/M/MV5BYjZiMmE2MDgtNDhjNC00ZWIzLWI5YjEtODk3NzQyODQ4MWExXkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_.jpg",
+	 "movieYear":"2022",
+	 "movieCast":["R. Madhavan", "Simran Bagga","Rajit Kapoor","Misha Ghoshal","Ravi Raghavendra"],
+	 "movieGenre":["Biography","Drama"],
+	 "movieLanguage":["English","Tamil","Hindi","Telugu""Kannada","Malyalam"],
+	 "movieDuration":158,
+	 "movieLocation":[
+	 {
+	 "city":"Bengaluru",
+	 "theatreList":[
+	 {
+		"theatreName":"Cinepolis: Binnypet Mall",
+		"seatCount":100,
+		"theatreAddress":"ETA Namma Mall, Binneypet, Magadi Road, Bengaluru, Karnataka 560023, India",
+		"movieTimings":["9:30 AM","1:30 PM","6:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Nexus Shantiniketan, Bengaluru",
+		"seatCount":100,
+		"theatreAddress":"3rd Floor, Prestige Shantiniketan Mall, Opposite Manipal Hospital, ITPL Main Road, Whitefield, Bengaluru, Karnataka 560067, India",
+		"movieTimings":["10:30 AM","3:30 PM","6:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"PVR: Orion Mall, Dr Rajkumar Road",
+		"seatCount":10,
+		"theatreAddress":"Orion Mall, 3rd Floor, Brigade Gateway, Dr. Rajkumar Road, Malleshwaram West, Bengaluru, Karnataka 560055, India",
+		"movieTimings":["9:30 AM","3:30 PM","7:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Prime",
+			"seatPrice":280
+		},
+		{
+			"seatType":"Classic",
+			"seatPrice":240
+		}
+		]
+	 },
+	 {
+		"theatreName":"PVR: Phoenix Marketcity Mall, Whitefield Road",
+		"seatCount":90,
+		"theatreAddress":"Phoenix Market City Mall, Whitefield Road, Mahadevapura, Krishnarajapura, Devasandra Industrial Estate, Bengaluru, Karnataka 560048, India",
+		"movieTimings":["4:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Prime",
+			"seatPrice":280
+		},
+		{
+			"seatType":"Classic",
+			"seatPrice":240
+		}
+		]
+	 }
+	 ]
+	 },
+    {
+	 "city":"Chennai",
+	 "theatreList":[
+	 {
+		"theatreName":"AGS Cinemas: T. Nagar",
+		"seatCount":10,
+		"theatreAddress":"No: 24/1, GN Chetty Road, T. Nagar, Opposite Dr. M.G.R. Educational and Research Institute, Chennai, Tamil Nadu 600017, India",
+		"movieTimings":["10:30 AM","2:00 PM","5:30 PM","10:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: BSR Mall, OMR, Thoraipakkam",
+		"seatCount":10,
+		"theatreAddress":"BSR Mall, Thoraipakkam, Seevaram, Oggiyamduraipakkam, Chennai, Tamil Nadu 600097, India",
+		"movieTimings":["12:30 PM","4:30 PM","8:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Chennai Citi Centre, Dr. RK Salai",
+		"seatCount":80,
+		"theatreAddress":"3rd Floor, Chennai Citi Center, Doctor Radha Krishnan Salai, Chennai, Tamil Nadu 600004, India",
+		"movieTimings":["9:00 AM","1:45 PM","3:00 PM","7:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: The Marina Mall, OMR",
+		"seatCount":30,
+		"theatreAddress":"3rd Floor, The Marina Mall, Old Mahabalipuram Road, Egatoor, Navalur, Chennai, Tamil Nadu 603103, India",
+		"movieTimings":["3:00 PM","7:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 }
+	 ]
+    },
+	{
+	 "city":"Hyderabad",
+	 "theatreList":[
+	 {
+		"theatreName":"AMB Cinemas: Gachibowli",
+		"seatCount":20,
+		"theatreAddress":"Sarath City Capital Mall, Kondapur, Gachibowli Hyderabad, Telangana 500084, India",
+		"movieTimings":["9:00 AM","12:30 PM","3:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Sudha Cinemas, Hyderabad",
+		"seatCount":80,
+		"theatreAddress":"Shah Ali Banda New Road, Rajpal Nagar, Sudha Theatre Road, Hyderabad, Telangana 500065, India",
+		"movieTimings":["1:30 PM","4:30 PM","8:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: GSM Mall, Hyderabad",
+		"seatCount":50,
+		"theatreAddress":"INOX Leisure Ltd, 4th floor, GSM Mall, Miyapur Main Road, Madinaguda, Hyderabad, Telangana 500049, India",
+		"movieTimings":["9:30 AM","12:30 PM","4:30 PM","9:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Maheshwari",
+		"seatCount":80,
+		"theatreAddress":"5th Floor, Maheshwari Parmeshwari Mall, Kachiguda Cross Roads, Hyderabad, Telangana 500027, India",
+		"movieTimings":["9:30 AM","12:30 PM","3:00 PM","7:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 }
+	 ]
+    },	
+	{
+	 "city":"Pune",
+	 "theatreList":[
+	 {
+		"theatreName":"Carnival: Premier Plaza, Chinchwad",
+		"seatCount":20,
+		"theatreAddress":"Premier Plaza, Old Mumbai Pune Highway, Chinchwad, Near Cosmos Bank, Pune, Maharashtra 411049, India",
+		"movieTimings":["9:00 AM","12:30 PM","3:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Seasons Mall, Pune",
+		"seatCount":60,
+		"theatreAddress":"3rd Floor, Seasons Mall, Magarpatta Police Station Road, Magarpatta City, Hadapsar, Pune, Maharashtra 411028, India",
+		"movieTimings":["1:30 PM","4:30 PM","8:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+		{
+			"seatType":"Premium",
+			"seatPrice":220
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Royal Heritage Mall, NIBM Ext",
+		"seatCount":90,
+		"theatreAddress":"Royale Heritage Mall, Mohammed Wadi, Next to Vibgyor International School, Pune, Maharashtra 411048, India",
+		"movieTimings":["4:30 PM","10:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"PVR: Phoenix Market City, Pune (4DX)",
+		"seatCount":60,
+		"theatreAddress":"2nd Floor, Phoenix Market City, Nagar Road, Viman Nagar, Clover Park, Near Baker Gauges, Pune, Maharashtra 411014, India",
+		"movieTimings":["9:00 AM","12:30 PM","3:30 PM","7:30 PM","9:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Prime",
+			"seatPrice":550
+		}
+		]
+	 }
+	 ]
+    },
+	{
+	 "city":"Delhi",
+	 "theatreList":[
+	 {
+		"theatreName":"Carnival: TGIP Red Carpet",
+		"seatCount":60,
+		"theatreAddress":"Plot No-A-2, Sector 38 A, Maharaja Agrasen Marg, Noida, NCR 201301, India",
+		"movieTimings":["9:30 AM","12:30 PM","3:30 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Smart Bharat Mall (Formerly Spice Mall)",
+		"seatCount":60,
+		"theatreAddress":"I-2, Near Metro Station Noida City Center, Sector 25A, Noida, NCR 201301, India",
+		"movieTimings":["1:30 PM","5:30 PM","9:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Omaxe Connaught Place Mall, Greater Noida",
+		"seatCount":20,
+		"theatreAddress":"2nd Floor, Omaxe Connaught Place Mall, Sector Beta-2, Greater Noida, NCR 201308, India",
+		"movieTimings":["9:20 AM","12:30 PM","4:30 PM","10:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX Eros One: Jangpura Extn",
+		"seatCount":37,
+		"theatreAddress":"Jangpura Extension, Block H, Near Central Market, Jangpura, Delhi, NCR 110014, India",
+		"movieTimings":["9:30 AM","12:30 PM","3:00 PM","7:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Delhi: PVR Director`s Cut, Ambience Mall",
+		"seatCount":80,
+		"theatreAddress":"Ambience Mall,Vasant Phase-2, Nelson Mandela Road, Delhi, NCR 110070 India",
+		"movieTimings":["9:00 AM","1:30 PM","3:30 PM","7:30 PM","9:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Prime",
+			"seatPrice":350
+		}
+		]
+	 }
+	 ]
+    },
+	{
+	 "city":"Mumbai",
+	 "theatreList":[
+	 {
+		"theatreName":"Carnival: R Mall Mulund",
+		"seatCount":80,
+		"theatreAddress":"3rd Floor, R Mall, Lal Bahadur Shastri Marg, Kamgar Colony, Mulund (West), Mumbai, Maharashtra 400080 India",
+		"movieTimings":["9:30 AM","1:30 PM","4:15 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Viviana Mall, Thane",
+		"seatCount":90,
+		"theatreAddress":"Viviana Mall, Eastern Express Highway, Laxmi Nagar, Thane (West), Thane, Maharashtra 400606, India",
+		"movieTimings":["1:30 PM","5:30 PM","9:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: Neelyog, Ghatkopar (E)",
+		"seatCount":50,
+		"theatreAddress":"3rd Floor, Neelyog Square Mall, R. B. Mehta Road, Ghatkopar East, Mumbai, Maharashtra 400077, India",
+		"movieTimings":["9:30 AM","12:00 PM","3:30 PM","9:00PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"INOX: R-City, Ghatkopar",
+		"seatCount":70,
+		"theatreAddress":"3rd Floor, R City Mall, Lal Bahadur Shastri Marg, Ghatkopar West, Mumbai, Maharashtra 400086, India",
+		"movieTimings":["9:30 AM","12:30 PM","3:00 PM","7:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"PVR: Lodha Xperia, Palava",
+		"seatCount":8,
+		"theatreAddress":"3rd Floor, Xperia Mall, Kalyan-Shilphata Road, Opposit Lodha World School, Dombivali (E), Mumbai, Maharashtra 421204, India",
+		"movieTimings":["9:00 AM","12:30 PM","3:30 PM","7:30 PM","10:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Club",
+			"seatPrice":350
+		}
+		]
+	 }
+	 ]
+    },
+	{
+	 "city":"Ahmedabad",
+	 "theatreList":[
+	 {
+		"theatreName":"Cinemax: Shiv, Ahmedabad",
+		"seatCount":90,
+		"theatreAddress":"Opposite City Gold Cinema, Ashram Road, Near Kotak Mahindra Bank, Ahmedabad, Gujarat 380009, India",
+		"movieTimings":["9:30 AM","12:30 PM","4:00 PM","9:30 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Diamond",
+			"seatPrice":450
+		},
+        {
+			"seatType":"Gold",
+			"seatPrice":400
+		},
+		{
+			"seatType":"Silver",
+			"seatPrice":350
+		}
+		]
+	 },
+	 {
+		"theatreName":"Cinepolis: Nexus Ahmedabad One",
+		"seatCount":90,
+		"theatreAddress":"3rd Floor, Alpha One Mall, Opp Vastrapur Lake, Ahmedabad, Gujarat 380015, India",
+		"movieTimings":["1:30 PM","5:30 PM","9:00 PM"],
+		"moviePrice":[
+		{
+			"seatType":"Executive",
+			"seatPrice":450
+		},
+		{
+			"seatType":"Premium",
+			"seatPrice":220
+		},
+        {
+			"seatType":"Normal",
+			"seatPrice":200
+		}
+		]
+	 }
+	 ]
+    }
+	],
+	 
+ }
+ ]
+ 
+}

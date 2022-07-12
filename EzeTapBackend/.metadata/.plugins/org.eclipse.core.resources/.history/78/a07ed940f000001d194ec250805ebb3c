@@ -1,0 +1,24 @@
+package com.bookmyshow.entity;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Embeddable;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+
+@Embeddable
+public class MovieTheatreTimingId {
+
+	@ManyToMany(cascade = {CascadeType.ALL})
+	@JoinColumn(name = "movie_id")
+	private MovieData movies;
+	
+	@ManyToMany(cascade = {CascadeType.ALL})
+	@JoinColumn(name = "timing_id")
+	private Timing timing;
+	
+	@ManyToMany(cascade = {CascadeType.ALL})
+	@JoinColumn(name = "theatre_id")
+	private Theatre theatre;
+	
+	
+}

@@ -1,0 +1,48 @@
+package com.bookmyshow.serviceImpl;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bookmyshow.entity.Genre;
+import com.bookmyshow.model.DashboardCardResponse;
+import com.bookmyshow.repository.GenreRepo;
+import com.bookmyshow.service.DashboardService;
+
+@Service
+public class DashboardServiceImpl implements DashboardService {
+
+	@Autowired
+	private GenreRepo genreRepo;
+	@Override
+	public DashboardCardResponse getGenreCardData() {
+		List<Genre> genreList = genreRepo.findAll();
+		List<String> cardSubTitleList = genreList.stream().map((genre)->genre.getGenre()).collect(Collectors.toList());
+		DashboardCardResponse cardResponse = new DashboardCardResponse();
+		cardResponse.setCardValue(cardSubTitleList.size());
+		cardResponse.setSubTitle(cardSubTitleList);
+		return cardResponse;
+	}
+
+	@Override
+	public DashboardCardResponse geLanguageCardData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DashboardCardResponse getLocationCardData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DashboardCardResponse getMoviesCardData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

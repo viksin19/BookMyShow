@@ -1,0 +1,29 @@
+package com.bookmyshow.entity;
+
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name= "Location")
+public class Location {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "location_id")
+	private long id;
+	
+	@Column(name = "city")
+	private String city;
+	
+	@ManyToMany(mappedBy = "movieLanguages")
+	private Set<MovieData> movies;
+	
+	
+}

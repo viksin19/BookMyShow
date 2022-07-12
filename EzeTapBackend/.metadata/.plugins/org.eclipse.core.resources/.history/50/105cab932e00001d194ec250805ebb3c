@@ -1,0 +1,19 @@
+package com.bookmyshow.util;
+
+import java.util.function.Function;
+
+import com.bookmyshow.entity.Location;
+import com.bookmyshow.model.MovieLocation;
+
+public class LocationMapper {
+
+	public static Function<MovieLocation, Location> locationToEnity() {
+		// TODO Auto-generated method stub
+		return (movieLocation)->{
+			Location location = new Location();
+			
+			return location;
+		};
+	}
+
+}

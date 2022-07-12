@@ -1,0 +1,7 @@
+package com.bookmyshow.controller;
+
+@RestController
+@RequestMapping("/movie")
+public class MovieController {
+
+}

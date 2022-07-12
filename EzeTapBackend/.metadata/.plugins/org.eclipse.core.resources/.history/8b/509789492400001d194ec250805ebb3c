@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.bookmyshow.model;
+
+/**
+ * @author jai12
+ *
+ */
+public class MoviePrice {
+
+	private String seatType;
+	private int seatPrice;
+}

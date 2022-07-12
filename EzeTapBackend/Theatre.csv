@@ -1,0 +1,29 @@
+theatre_id,seat_count,theatre_address,theatre_name,location_id
+401,100,"ETA Namma Mall, Binneypet, Magadi Road, Bengaluru, Karnataka 560023, India","Cinepolis: Binnypet Mall",301
+402,70,"3rd Floor, Prestige Shantiniketan Mall, Opposite Manipal Hospital, ITPL Main Road, Whitefield, Bengaluru, Karnataka 560067, India","Cinepolis: Nexus Shantiniketan, Bengaluru",301
+403,30,"Orion Mall, 3rd Floor, Brigade Gateway, Dr. Rajkumar Road, Malleshwaram West, Bengaluru, Karnataka 560055, India","VR: Orion Mall, Dr Rajkumar Road",301
+404,40,"Phoenix Market City Mall, Whitefield Road, Mahadevapura, Krishnarajapura, Devasandra Industrial Estate, Bengaluru, Karnataka 560048, India","PVR: Phoenix Marketcity Mall, Whitefield Road",301
+405,100,"No: 24/1, GN Chetty Road, T. Nagar, Opposite Dr. M.G.R. Educational and Research Institute, Chennai, Tamil Nadu 600017, India","AGS Cinemas: T. Nagar",302
+406,70,"BSR Mall, Thoraipakkam, Seevaram, Oggiyamduraipakkam, Chennai, Tamil Nadu 600097, India","Cinepolis: BSR Mall, OMR, Thoraipakkam",302
+407,10,"3rd Floor, Chennai Citi Center, Doctor Radha Krishnan Salai, Chennai, Tamil Nadu 600004, India","INOX: Chennai Citi Centre, Dr. RK Salai",302
+408,20,"3rd Floor, The Marina Mall, Old Mahabalipuram Road, Egatoor, Navalur, Chennai, Tamil Nadu 603103, India","INOX: The Marina Mall, OMR",302
+409,54,"Sarath City Capital Mall, Kondapur, Gachibowli Hyderabad, Telangana 500084, India","AMB Cinemas: Gachibowli",303
+410,60,"Shah Ali Banda New Road, Rajpal Nagar, Sudha Theatre Road, Hyderabad, Telangana 500065, India","Cinepolis: Sudha Cinemas, Hyderabad",303
+411,10,"INOX Leisure Ltd, 4th floor, GSM Mall, Miyapur Main Road, Madinaguda, Hyderabad, Telangana 500049, India","INOX: GSM Mall, Hyderabad",303
+412,20,"5th Floor, Maheshwari Parmeshwari Mall, Kachiguda Cross Roads, Hyderabad, Telangana 500027, India","INOX: Maheshwari",303
+413,54,"Plot No-A-2, Sector 38 A, Maharaja Agrasen Marg, Noida, NCR 201301, India","Carnival: TGIP Red Carpet",304
+414,40,"I-2, Near Metro Station Noida City Center, Sector 25A, Noida, NCR 201301, India","Cinepolis: Smart Bharat Mall (Formerly Spice Mall)",304
+415,10,"2nd Floor, Omaxe Connaught Place Mall, Sector Beta-2, Greater Noida, NCR 201308, India","INOX: Omaxe Connaught Place Mall, Greater Noida",304
+416,20,"Jangpura Extension, Block H, Near Central Market, Jangpura, Delhi, NCR 110014, India","INOX Eros One: Jangpura Extn",304
+417,20,"Ambience Mall,Vasant Phase-2, Nelson Mandela Road, Delhi, NCR 110070, India","Delhi: PVR Director`s Cut, Ambience Mall",304
+418,54,"Premier Plaza, Old Mumbai Pune Highway, Chinchwad, Near Cosmos Bank, Pune, Maharashtra 411049, India","Carnival: Premier Plaza, Chinchwad",305
+419,30,"3rd Floor, Seasons Mall, Magarpatta Police Station Road, Magarpatta City, Hadapsar, Pune, Maharashtra 411028, India","Cinepolis: Seasons Mall, Pune",305
+420,10,"Royale Heritage Mall, Mohammed Wadi, Next to Vibgyor International School, Pune, Maharashtra 411048, India","INOX: Royal Heritage Mall, NIBM Ext",305
+421,10,"2nd Floor, Phoenix Market City, Nagar Road, Viman Nagar, Clover Park, Near Baker Gauges, Pune, Maharashtra 411014, India","PVR: Phoenix Market City, Pune (4DX)",305
+422,54,"3rd Floor, R Mall, Lal Bahadur Shastri Marg, Kamgar Colony, Mulund (West), Mumbai, Maharashtra 400080, India","Carnival: R Mall Mulund",306
+423,40,"Viviana Mall, Eastern Express Highway, Laxmi Nagar, Thane (West), Thane, Maharashtra 400606, India","Cinepolis: Viviana Mall, Thane",306
+424,10,"3rd Floor, Neelyog Square Mall, R. B. Mehta Road, Ghatkopar East, Mumbai, Maharashtra 400077, India","INOX: Neelyog, Ghatkopar (E)",306
+425,20,"3rd Floor, R City Mall, Lal Bahadur Shastri Marg, Ghatkopar West, Mumbai, Maharashtra 400086, India","INOX: R-City, Ghatkopar",306
+426,20,"3rd Floor, Xperia Mall, Kalyan-Shilphata Road, Opposit Lodha World School, Dombivali (E), Mumbai, Maharashtra 421204, India","PVR: Lodha Xperia, Palava",306
+427,54,"Opposite City Gold Cinema, Ashram Road, Near Kotak Mahindra Bank, Ahmedabad, Gujarat 380009, India","Cinemax: Shiv, Ahmedabad",307
+428,40,"3rd Floor, Alpha One Mall, Opp Vastrapur Lake, Ahmedabad, Gujarat 380015, India","Cinepolis: Nexus Ahmedabad One",307

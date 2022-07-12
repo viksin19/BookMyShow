@@ -1,0 +1,5 @@
+package com.bookmyshow.service;
+
+public interface UserAuthService {
+
+}

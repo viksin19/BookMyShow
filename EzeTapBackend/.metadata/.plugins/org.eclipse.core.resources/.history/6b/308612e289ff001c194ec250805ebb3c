@@ -1,0 +1,74 @@
+/**
+ * 
+ */
+package com.bookmyshow.entity;
+
+import java.io.Serializable;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+/**
+ * @author jai12
+ *
+ */
+@Entity
+@Table(name = "Theatre")
+public class Theatre implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "theatre_id")
+	private long Id;
+	
+	@Column(name = "theatre_name")
+	private String theatreName;
+	
+	@ManyToMany(mappedBy = "theatreList")
+	private Set<MovieData> movieList;
+	
+	@OneToMany(mappedBy = "theatre",cascade = CascadeType.PERSIST,fetch= FetchType.LAZY)
+	private Set<MoviePrice> moviePrice;
+
+	public long getId() {
+		return Id;
+	}
+
+	public void setId(long id) {
+		Id = id;
+	}
+
+	public String getTheatreName() {
+		return theatreName;
+	}
+
+	public void setTheatreName(String theatreName) {
+		this.theatreName = theatreName;
+	}
+
+	public Set<MovieData> getMovieList() {
+		return movieList;
+	}
+
+	public void setMovieList(Set<MovieData> movieList) {
+		this.movieList = movieList;
+	}
+	
+	
+	
+}

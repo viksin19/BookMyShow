@@ -1,0 +1,35 @@
+package com.bookmyshow.util;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+import com.bookmyshow.entity.Location;
+import com.bookmyshow.model.MovieLocation;
+
+public class LocationMapper {
+
+	public static Function<MovieLocation, Location> locationToEnity() {
+		// TODO Auto-generated method stub
+		return (movieLocation)->{
+			Location location = new Location();
+			location.setCity(movieLocation.getCity());
+			location.setTheatreList(movieLocation.getTheatreList().stream()
+					.map(TheatreMapper.movieTheatreToTheatre())
+					.collect(Collectors.toSet()));
+			return location;
+		};
+	}
+
+	public static Function<Location, MovieLocation> locationEntityToLocation() {
+		return (location)->{
+			MovieLocation movieLocation = new MovieLocation();
+			movieLocation.setLocationId(location.getId());
+			movieLocation.setCity(location.getCity());
+			movieLocation.setTheatreList(new HashSet<>());
+			return movieLocation;
+		};
+	}
+
+}

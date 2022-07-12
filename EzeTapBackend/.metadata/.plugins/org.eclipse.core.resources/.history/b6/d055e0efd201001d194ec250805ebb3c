@@ -1,0 +1,5 @@
+package com.bookmyshow.model;
+
+public class ChartDataResponse {
+
+}

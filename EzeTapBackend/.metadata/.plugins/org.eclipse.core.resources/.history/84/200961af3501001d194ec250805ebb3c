@@ -1,0 +1,10 @@
+package com.bookmyshow.model;
+
+import java.util.List;
+
+public class DashboardCardResponse {
+
+	private String cardTitle;
+	private int cardValue;
+	private List<String> subTitle;
+}

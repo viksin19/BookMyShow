@@ -1,0 +1,97 @@
+/**
+ * 
+ */
+package com.bookmyshow.entity;
+
+import java.io.Serializable;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+/**
+ * @author jai12
+ *
+ */
+@Entity
+@Table(name="Movie")
+public class MovieData implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name="movie_id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long movieId;
+	
+	@Column(name = "movie_name")
+	private String movieName;
+	
+	
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(name = "movie_cast",
+	joinColumns = @JoinColumn(name = "movie_id"),
+	inverseJoinColumns = @JoinColumn(name = "cast_id"))
+	private Set<Cast> movieCasts;
+	
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(name = "movie_language",
+	joinColumns = @JoinColumn(name = "movie_id"),
+	inverseJoinColumns = @JoinColumn(name = "language_id"))
+	private Set<Language> movieLanguages;
+	
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(name = "movie_location",
+	joinColumns = @JoinColumn(name = "movie_id"),
+	inverseJoinColumns = @JoinColumn(name = "location_id"))
+	private Set<Location> movieLocations;
+
+
+	/**
+	 * 
+	 */
+	public MovieData() {}
+
+
+	public long getMovieId() {
+		return movieId;
+	}
+
+
+	public void setMovieId(long movieId) {
+		this.movieId = movieId;
+	}
+
+
+	public String getMovieName() {
+		return movieName;
+	}
+
+
+	public void setMovieName(String movieName) {
+		this.movieName = movieName;
+	}
+
+
+	public Set<Cast> getMovieCasts() {
+		return movieCasts;
+	}
+
+
+	public void setMovieCasts(Set<Cast> movieCasts) {
+		this.movieCasts = movieCasts;
+	}
+	
+	
+}

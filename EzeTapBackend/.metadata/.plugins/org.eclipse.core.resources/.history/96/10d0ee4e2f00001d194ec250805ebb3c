@@ -1,0 +1,12 @@
+package com.bookmyshow.util;
+
+import java.util.function.Function;
+
+public class TheatreTimingMapper {
+
+	public static Function timingSetToTimingEntity() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

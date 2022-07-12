@@ -1,0 +1,12 @@
+package com.bookmyshow.util;
+
+import java.util.function.Function;
+
+public class LocationMapper {
+
+	public static Function locationToEnity() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

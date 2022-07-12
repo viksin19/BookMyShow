@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package com.bookmyshow.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ * @author jai12
+ *
+ */
+@Entity
+@Table(name = "Movie_Theatre_Price")
+public class MoviePrice {
+
+	@Id
+	@Column(name = "price_id")
+	private long Id;
+	
+	@Column(name = "Seat_Type")
+	private String seatType;
+	
+	@Column(name = "Seat_Price")
+	private long seatPrice;
+	
+	
+}

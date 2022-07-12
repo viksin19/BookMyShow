@@ -1,0 +1,44 @@
+package com.bookmyshow.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Transient;
+@Entity
+public class MovieTheatreTiming implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@EmbeddedId
+	private MovieTheatreTimingId movieTheatreTimingId = new MovieTheatreTimingId();
+	
+	/**
+	 * 
+	 */
+	public MovieTheatreTiming() {
+		super();
+	}
+
+	@Transient
+	public MovieData getMovies() {
+		return movieTheatreTimingId.getMovies();
+	}
+	
+	@Transient
+	public Theatre getTheatre() {
+		return movieTheatreTimingId.getTheatre();
+	}
+	
+	@Transient
+	public Timing gettiming() {
+		return movieTheatreTimingId.getTiming();
+	}
+
+	public MovieTheatreTimingId getMovieTheatreTimingId() {
+		return movieTheatreTimingId;
+	}
+	
+}

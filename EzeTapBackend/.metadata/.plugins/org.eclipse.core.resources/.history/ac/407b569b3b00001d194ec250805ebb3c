@@ -1,0 +1,40 @@
+package com.bookmyshow.util;
+
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+import com.bookmyshow.entity.Cast;
+import com.bookmyshow.entity.MovieData;
+import com.bookmyshow.model.Movies;
+
+public class MovieDataMapper {
+
+	public static Function<Movies, MovieData> MoviesToMovieData(){
+		return (Movies movie)->{
+			MovieData movieData = new MovieData();
+			
+			movieData.setMovieName(movie.getMovieName());
+			movieData.setMovieLikes(movie.getMovieLikes());
+			movieData.setMovieRating(movie.getMovieRating());
+			movieData.setMovieDuration(movie.getMovieDuration());
+			movieData.setMovieUrl(movie.getImgUrl());
+			
+			movieData.setMovieCasts(movie.getMovieCast().stream()
+					.map(CastMapper.castNameToCastEntity())
+					.collect(Collectors.toSet()));
+			
+			movieData.setMovieGenre(movie.getMovieGenre().stream()
+					.map(GenreMapper.genreNameToGenreEntity())
+					.collect(Collectors.toSet()));
+			
+			movieData.setMovieLanguages(movie.getMovieLanguage().stream()
+					.map(LanguageMapper.languageNameToLanguageEntity())
+					.collect(Collectors.toSet()));
+			
+			movieData.setMovieLocations(movie.getMovieLocation().stream()
+					.map(LocationMapper.locationToEnity()).collect(Collectors.toSet()));
+			
+			return movieData;
+		};
+	}
+}

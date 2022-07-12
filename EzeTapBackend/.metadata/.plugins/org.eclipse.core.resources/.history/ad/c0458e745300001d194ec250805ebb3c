@@ -1,0 +1,22 @@
+package com.bookmyshow.constants;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class BookMyShowConstants {
+
+	public static final Map<String, Long> languageMap = new HashMap<>();
+	static {
+	languageMap.put("Action",101L);
+	languageMap.put("Adventure",102L);
+	languageMap.put("Biography",103L);
+	languageMap.put("Thriller",104L);
+	languageMap.put("Drama",105L);
+	languageMap.put("Crime",106L);
+	languageMap.put("Suspense",107L);
+	languageMap.put("Fantasy",108L);
+	languageMap.put("Horror",109L);
+	languageMap.put("Comedy",110L);
+	languageMap.put("Animation",111L);
+	}
+}

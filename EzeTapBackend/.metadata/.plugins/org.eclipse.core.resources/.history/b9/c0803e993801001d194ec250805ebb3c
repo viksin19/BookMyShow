@@ -1,0 +1,58 @@
+package com.bookmyshow.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bookmyshow.entity.MovieData;
+import com.bookmyshow.model.MovieAddRequestBody;
+import com.bookmyshow.service.DashboardService;
+import com.bookmyshow.service.MovieService;
+
+@RestController
+@RequestMapping("/movie")
+public class MovieController {
+
+	@Autowired
+	private MovieService movieService;
+	
+	@Autowired
+	private DashboardService dashboardService;
+	
+	@PostMapping("/add")
+	public ResponseEntity<?> addMovie(@RequestBody MovieAddRequestBody movieAddReq){
+		return new ResponseEntity<>(movieService.addMovieDetails(movieAddReq),HttpStatus.OK);
+	}
+	
+	@GetMapping("/all")
+	public ResponseEntity<List<MovieData>> fetchALLMovie(){
+		return new ResponseEntity<List<MovieData>>(movieService.fetchAllMovies(),HttpStatus.OK);
+	}
+	
+	@GetMapping("/genre")
+	public ResponseEntity<?> fetchGenreCardData(){
+		return new ResponseEntity<>(dashboardService.getGenreCardData(),HttpStatus.OK);
+	}
+	
+	@GetMapping("/location")
+	public ResponseEntity<List<MovieData>> fetchLocationCardData(){
+		return new ResponseEntity<List<MovieData>>(movieService.fetchAllMovies(),HttpStatus.OK);
+	}
+	
+	@GetMapping("/language")
+	public ResponseEntity<List<MovieData>> fetchLanguageCardData(){
+		return new ResponseEntity<List<MovieData>>(movieService.fetchAllMovies(),HttpStatus.OK);
+	}
+	
+	@GetMapping("/movies")
+	public ResponseEntity<List<MovieData>> fetchMoviesCardData(){
+		return new ResponseEntity<List<MovieData>>(movieService.fetchAllMovies(),HttpStatus.OK);
+	}
+}

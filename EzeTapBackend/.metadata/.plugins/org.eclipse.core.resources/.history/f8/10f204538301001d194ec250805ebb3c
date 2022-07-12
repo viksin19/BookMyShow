@@ -1,0 +1,120 @@
+package com.bookmyshow.model;
+
+import java.util.List;
+import java.util.Set;
+
+public class Movies {
+
+	private String movieId;
+	private String movieName;
+	private long movieRating;
+	private long movieLikes;
+	private String imgUrl;
+	private String movieYear;
+	private long movieDuration;
+	
+	private List<String> movieCast;
+	private List<String> movieGenre;
+	private List<String> movieLanguage;
+	
+	private List<MovieLocation> movieLocation;
+
+	
+	/**
+	 * 
+	 */
+	public Movies() {}
+
+	public String getMovieId() {
+		return movieId;
+	}
+
+	public void setMovieId(String movieId) {
+		this.movieId = movieId;
+	}
+
+	public String getMovieName() {
+		return movieName;
+	}
+
+	public void setMovieName(String movieName) {
+		this.movieName = movieName;
+	}
+
+	public long getMovieRating() {
+		return movieRating;
+	}
+
+	public void setMovieRating(long movieRating) {
+		this.movieRating = movieRating;
+	}
+
+	public long getMovieLikes() {
+		return movieLikes;
+	}
+
+	public void setMovieLikes(long movieLikes) {
+		this.movieLikes = movieLikes;
+	}
+
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
+	}
+
+	public String getMovieYear() {
+		return movieYear;
+	}
+
+	public void setMovieYear(String movieYear) {
+		this.movieYear = movieYear;
+	}
+
+	public long getMovieDuration() {
+		return movieDuration;
+	}
+
+	public void setMovieDuration(long movieDuration) {
+		this.movieDuration = movieDuration;
+	}
+
+	public Set<String> getMovieCast() {
+		return movieCast;
+	}
+
+	public void setMovieCast(Set<String> movieCast) {
+		this.movieCast = movieCast;
+	}
+
+	public Set<String> getMovieGenre() {
+		return movieGenre;
+	}
+
+	public void setMovieGenre(Set<String> movieGenre) {
+		this.movieGenre = movieGenre;
+	}
+
+	public Set<String> getMovieLanguage() {
+		return movieLanguage;
+	}
+
+	public void setMovieLanguage(Set<String> movieLanguage) {
+		this.movieLanguage = movieLanguage;
+	}
+
+	public Set<MovieLocation> getMovieLocation() {
+		return movieLocation;
+	}
+
+	public void setMovieLocation(Set<MovieLocation> movieLocation) {
+		this.movieLocation = movieLocation;
+	}
+	
+	
+	
+	
+	
+}

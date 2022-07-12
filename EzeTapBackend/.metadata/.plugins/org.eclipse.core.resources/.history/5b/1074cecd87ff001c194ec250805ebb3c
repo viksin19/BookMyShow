@@ -1,0 +1,89 @@
+/**
+ * 
+ */
+package com.bookmyshow.serviceImpl;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bookmyshow.entity.Cast;
+import com.bookmyshow.entity.Genre;
+import com.bookmyshow.entity.Language;
+import com.bookmyshow.entity.Location;
+import com.bookmyshow.entity.MovieData;
+import com.bookmyshow.repository.MovieRepo;
+import com.bookmyshow.service.MovieService;
+
+/**
+ * @author jai12
+ *
+ */
+@Service
+public class MovieServiceImpl implements MovieService {
+
+	@Autowired
+	private MovieRepo movieRepo;
+	
+	@Override
+	public String addMovieDetails() {
+		try {
+			addMovie();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "Error:: while saving data.";
+			
+		}
+		return "Movie got added successfully.";
+	}
+
+	private void addMovie() {
+		MovieData movieData = new MovieData();
+		movieData.setMovieName("Thor: Love and Thunder");
+		movieData.setMovieLikes(90);
+		movieData.setMovieRating(4);
+		movieData.setMovieUrl("https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODQlICAyOGsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00302403-wljlgzceyk-portrait.jpg");
+		movieData.setYear("2022");
+		
+		Set<Cast> castSet = new HashSet<>();
+		Set<Language> language = new HashSet<>();
+		Set<Genre> genreSet = new HashSet<>();
+		Set<Location> location = new HashSet<>();
+		
+		List<String> castList = Arrays.asList("");
+		List<String> genreList = Arrays.asList("");
+		List<String> languageList = Arrays.asList("");
+		List<String> locationList = Arrays.asList("");
+		
+		castList.forEach(cast->{
+			Cast item = new Cast();
+			item.setCastName(cast);
+			castSet.add(item);
+		});
+		
+		genreList.forEach(genre->{
+			Genre gen = new Genre();
+			gen.setGenre(genre);
+			genreSet.add(gen);
+		});
+		
+		languageList.forEach(lan->{
+			Language item = new Language();
+			item.setLanguage(lan);
+			language.add(item);
+		});
+		
+		locationList.forEach(city->{
+			Location item = new Location();
+			item.setCity(city);
+			location.add(item);
+		});
+		movieData.setMovieCasts(castSet);
+		movieRepo.save(movieData);
+	}
+}

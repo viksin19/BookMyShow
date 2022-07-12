@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package com.bookmyshow.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.bookmyshow.entity.MovieData;
+
+/**
+ * @author jai12
+ *
+ */
+public interface MovieRepo extends JpaRepository<MovieData, Long> {
+
+}

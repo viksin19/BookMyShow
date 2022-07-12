@@ -1,0 +1,16 @@
+package com.bookmyshow.repository;
+
+import java.util.Set;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.bookmyshow.entity.Timing;
+
+@Repository
+public interface TimingRepo extends JpaRepository<Timing, Long> {
+
+	@Query("select t.movieTiming from Timing t Join t.movieTheatreList tm On t ")
+	public Set<String> findByMovieIdAndTheatreId(long movieId,long theatreId);
+}

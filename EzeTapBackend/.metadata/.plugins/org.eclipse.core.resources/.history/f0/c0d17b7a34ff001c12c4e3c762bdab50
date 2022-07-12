@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.bookmyshow.entity;
+
+/**
+ * @author jai12
+ *
+ */
+public class MovieData {
+
+}

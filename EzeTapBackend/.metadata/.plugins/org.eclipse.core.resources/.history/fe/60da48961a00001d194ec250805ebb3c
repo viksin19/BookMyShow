@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package com.bookmyshow.entity;
+
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+/**
+ * @author jai12
+ *
+ */
+@Entity
+@Table(name = "Timing")
+public class Timing  {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "timing_id")
+	private long Id;
+	
+	@Column(name = "movie_timing")
+	private String movieTiming;
+	
+	@ManyToMany(mappedBy = "timingList")
+	private Set<MovieData> movieList;
+	
+	
+}

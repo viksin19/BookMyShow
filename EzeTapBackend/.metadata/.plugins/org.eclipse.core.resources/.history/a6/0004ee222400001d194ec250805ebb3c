@@ -1,0 +1,10 @@
+package com.bookmyshow.model;
+
+import java.util.Set;
+
+public class MovieAddRequestBody {
+
+	
+	private Set<Movies> movieList;
+	
+}

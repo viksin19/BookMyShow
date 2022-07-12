@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package com.bookmyshow.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ * @author jai12
+ *
+ */
+@Entity
+@Table(name="Movie")
+public class MovieData {
+
+	@Id
+	@Column(name="id")
+	private long id;
+}

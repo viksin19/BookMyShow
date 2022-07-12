@@ -1,0 +1,11 @@
+price_id,seat_price,seat_type
+501,450,Diamond
+502,400,Gold
+503,350,Silver
+504,450,Executive
+505,280,Prime
+506,240,Classic
+507,240,Club
+508,200,Normal
+509,550,Prime
+510,220,Premium

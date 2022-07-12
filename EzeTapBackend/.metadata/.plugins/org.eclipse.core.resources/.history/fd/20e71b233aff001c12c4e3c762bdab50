@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package com.bookmyshow.serviceImpl;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.springframework.stereotype.Service;
+
+import com.bookmyshow.entity.Cast;
+import com.bookmyshow.entity.MovieData;
+import com.bookmyshow.service.MovieService;
+
+/**
+ * @author jai12
+ *
+ */
+@Service
+public class MovieServiceImpl implements MovieService {
+
+	@Override
+	public String addMovieDetails() {
+		return "Movie got added successfully.";
+	}
+
+	private void addMovie() {
+		MovieData movieData = new MovieData();
+		movieData.setMovieName("Thor: Love and Thunder");
+		Set<Cast> castSet = new HashSet<>();
+		Cast chrish = new Cast();
+		chrish.setCastName("Chrish Hemsworth");
+		
+		Cast natlie = new Cast();
+		chrish.setCastName("Natlie Portman");
+		
+	}
+}

@@ -1,0 +1,7 @@
+package com.bookmyshow.serviceImpl;
+
+import com.bookmyshow.service.UserAuthService;
+
+public class UserAuthServiceImpl implements UserAuthService {
+
+}

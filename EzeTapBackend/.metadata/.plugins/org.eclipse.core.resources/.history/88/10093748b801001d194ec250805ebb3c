@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package com.bookmyshow.model;
+
+/**
+ * @author jai12
+ *
+ */
+public class ErrorResponse {
+
+	private String errorMessage;
+
+	/**
+	 * @param errorMessage
+	 */
+	public ErrorResponse(String errorMessage) {
+		super();
+		this.errorMessage = errorMessage;
+	}
+	
+	
+}

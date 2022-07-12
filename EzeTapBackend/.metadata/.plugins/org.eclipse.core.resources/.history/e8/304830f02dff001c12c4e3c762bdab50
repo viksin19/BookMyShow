@@ -1,0 +1,6 @@
+server.port=8000
+server.host=localhost
+
+spring.datasource.url=jdbc:mysql://localhost:3306/
+spring.datasource.username=root
+spring.datasource.password=root

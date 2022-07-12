@@ -1,0 +1,24 @@
+package com.bookmyshow.util;
+
+import java.util.function.Function;
+
+import com.bookmyshow.entity.Genre;
+
+public class GenreMapper {
+
+	public static Function<String, Genre> genreNameToGenreEntity() {
+		
+		return (String genreName)->{
+			Genre genre = new Genre();
+			//genre.setId(BookMyShowConstants.genreMap.get(genreName));
+			genre.setGenre(genreName);
+			return genre;
+		};
+	}
+
+	public static Function<Genre, String> genreEntityToGenreName() {
+		// TODO Auto-generated method stub
+		return genre->genre.getGenre();
+	}
+
+}

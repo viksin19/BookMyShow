@@ -1,0 +1,86 @@
+/**
+ * 
+ */
+package com.bookmyshow.serviceImpl;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bookmyshow.entity.Cast;
+import com.bookmyshow.entity.Genre;
+import com.bookmyshow.entity.MovieData;
+import com.bookmyshow.repository.MovieRepo;
+import com.bookmyshow.service.MovieService;
+
+/**
+ * @author jai12
+ *
+ */
+@Service
+public class MovieServiceImpl implements MovieService {
+
+	@Autowired
+	private MovieRepo movieRepo;
+	
+	@Override
+	public String addMovieDetails() {
+		try {
+			addMovie();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "Error:: while saving data.";
+			
+		}
+		return "Movie got added successfully.";
+	}
+
+	private void addMovie() {
+		MovieData movieData = new MovieData();
+		movieData.setMovieName("Thor: Love and Thunder");
+		movieData.setMovieLikes(0);
+		movieData.setMovieRating(0);
+		movieData.setMovieUrl("");
+		
+		Set<Cast> castSet = new HashSet<>();
+		Set<Cast> language = new HashSet<>();
+		Set<Cast> genreSet = new HashSet<>();
+		Set<Cast> location = new HashSet<>();
+		
+		List<String> castList = Arrays.asList("");
+		List<String> genreList = Arrays.asList("");
+		List<String> languageList = Arrays.asList("");
+		List<String> locationList = Arrays.asList("");
+		
+		castList.forEach(cast->{
+			Cast item = new Cast();
+			item.setCastName(cast);
+			castSet.add(item);
+		});
+		
+		genreList.forEach(genre->{
+			Genre gen = new Genre();
+			gen.setGenre(genre);
+			genreSet.add(gen);
+		});
+		
+		castList.forEach(cast->{
+			Cast item = new Cast();
+			item.setCastName("Chrish Hemsworth");
+			castSet.add(item);
+		});
+		
+		castList.forEach(cast->{
+			Cast item = new Cast();
+			item.setCastName("Chrish Hemsworth");
+			castSet.add(item);
+		});
+		movieData.setMovieCasts(castSet);
+		movieRepo.save(movieData);
+	}
+}

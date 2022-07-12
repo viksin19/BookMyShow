@@ -1,0 +1,7 @@
+package com.bookmyshow.entity;
+
+import com.bookmyshow.model.UserAuthReq;
+
+public class UserData extends UserAuthReq{
+
+}

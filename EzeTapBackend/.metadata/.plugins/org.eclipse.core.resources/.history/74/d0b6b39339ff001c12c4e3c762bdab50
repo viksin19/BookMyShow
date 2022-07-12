@@ -1,0 +1,23 @@
+package com.bookmyshow.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bookmyshow.service.MovieService;
+
+@RestController
+@RequestMapping("/movie")
+public class MovieController {
+
+	@Autowired
+	private MovieService movieService;
+	
+	@GetMapping("/add")
+	public ResponseEntity<?> addMovie(){
+		return new ResponseEntity<>(movieService.addMovieDetails(),HttpStatus.OK)
+	}
+}

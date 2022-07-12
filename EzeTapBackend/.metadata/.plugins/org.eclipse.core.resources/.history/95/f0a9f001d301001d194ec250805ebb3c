@@ -1,0 +1,10 @@
+package com.bookmyshow.model;
+
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+@JsonSerialize
+public class ChartDataResponse {
+
+	private String chartLable;
+	private int chartValue;
+}

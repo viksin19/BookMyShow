@@ -1,0 +1,22 @@
+package com.bookmyshow.model;
+
+import java.util.Set;
+
+public class Movies {
+
+	private String movieId;
+	private String movieName;
+	private long movieRating;
+	private long movieLikes;
+	private String imgUrl;
+	private String movieYear;
+	private long movieDuration;
+	
+	private Set<String> movieCast;
+	private Set<String> movieGenre;
+	private Set<String> movieLanguage;
+	
+	
+	
+	
+}

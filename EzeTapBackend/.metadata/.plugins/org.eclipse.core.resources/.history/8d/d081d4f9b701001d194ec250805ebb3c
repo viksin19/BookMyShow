@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.bookmyshow.model;
+
+/**
+ * @author jai12
+ *
+ */
+public class ErrorResponse {
+
+}

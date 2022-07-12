@@ -1,0 +1,15 @@
+package com.bookmyshow.service;
+
+import com.bookmyshow.model.DashboardCardResponse;
+
+public interface DashboardService {
+
+	public DashboardCardResponse getGenreCardData();
+	public DashboardCardResponse getGenreChartData();
+	
+	public DashboardCardResponse getLanguageCardData();
+	
+	public DashboardCardResponse getLocationCardData();
+	
+	public DashboardCardResponse getMoviesCardData();
+}

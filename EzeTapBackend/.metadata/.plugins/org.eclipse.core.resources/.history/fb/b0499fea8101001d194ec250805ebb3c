@@ -1,0 +1,59 @@
+/**
+ * 
+ */
+package com.bookmyshow.serviceImpl;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bookmyshow.entity.MovieData;
+import com.bookmyshow.model.MovieAddRequestBody;
+import com.bookmyshow.model.Movies;
+import com.bookmyshow.repository.MovieRepo;
+import com.bookmyshow.service.MovieService;
+import com.bookmyshow.util.MovieDataMapper;
+
+/**
+ * @author jai12
+ *
+ */
+@Service
+public class MovieServiceImpl implements MovieService {
+
+	@Autowired
+	private MovieRepo movieRepo;
+	
+	@Override
+	public String addMovieDetails(MovieAddRequestBody movieAddReq) {
+		try {
+			addMovie(movieAddReq);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "Error:: while saving data.";
+			
+		}
+		return "Movie got added successfully.";
+	}
+
+	private void addMovie(MovieAddRequestBody movieAddReq) {
+		
+//		movieAddReq.getMovieList().stream().map(MovieDataMapper.MoviesToMovieData())
+//				.forEach(movieData -> movieRepo.save(movieData));
+//		MovieData movieData = new MovieData();
+//		movieRepo.save(movieData);
+	}
+
+	@Override
+	public List<Movies> fetchAllMovies() {
+		// TODO Auto-generated method stub
+		List<Movies> resultList = movieRepo.findAll().parallelStream()
+				.map(MovieDataMapper.MovieDataToMovies())
+				.collect(Collectors.toList());
+		
+		return resultList;
+	}
+}

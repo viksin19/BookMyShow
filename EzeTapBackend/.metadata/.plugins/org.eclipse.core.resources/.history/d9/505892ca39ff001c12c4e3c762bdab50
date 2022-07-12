@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package com.bookmyshow.serviceImpl;
+
+import org.springframework.stereotype.Service;
+
+import com.bookmyshow.service.MovieService;
+
+/**
+ * @author jai12
+ *
+ */
+@Service
+public class MovieServiceImpl implements MovieService {
+
+	@Override
+	public String addMovieDetails() {
+		return "Movie got added successfully.";
+	}
+
+}

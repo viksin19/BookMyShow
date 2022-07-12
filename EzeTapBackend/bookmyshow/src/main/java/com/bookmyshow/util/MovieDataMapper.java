@@ -4,6 +4,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import com.bookmyshow.entity.Cast;
+import com.bookmyshow.entity.Genre;
 import com.bookmyshow.entity.Language;
 import com.bookmyshow.entity.MovieData;
 import com.bookmyshow.model.Movies;
@@ -23,17 +24,17 @@ public class MovieDataMapper {
 			movie.setMovieYear(movieData.getYear());
 			
 			movie.setMovieCast(movieData.getMovieCasts().stream()
-					.map(CastMapper.castEntityToCastName())
+					.map(Cast::getCastName)
 					.sorted()
 					.collect(Collectors.toList()));
 			
 			movie.setMovieGenre(movieData.getMovieGenre().stream()
-					.map(GenreMapper.genreEntityToGenreName())
+					.map(Genre::getGenre)
 					.sorted()
 					.collect(Collectors.toList()));
 			
 			movie.setMovieLanguage(movieData.getMovieLanguages().stream()
-					.map(LanguageMapper.languageEntityToLanguageName())
+					.map(Language::getLanguage)
 					.sorted()
 					.collect(Collectors.toList()));
 			
@@ -45,38 +46,6 @@ public class MovieDataMapper {
 		};
 	}
 
-	
-	public static Function<Movies, MovieData> MovieToMovieData(){
-		return (Movies movie)->{
-			MovieData movieData = new MovieData();
-			
-			movieData.setMovieName(movie.getMovieName());
-			movieData.setMovieLikes(movie.getMovieLikes());
-			movieData.setMovieRating(movie.getMovieRating());
-			movieData.setMovieDuration(movie.getMovieDuration());
-			movieData.setMovieUrl(movie.getImgUrl());
-			movieData.setYear(movie.getMovieYear());
-			
-			movieData.setMovieCasts(movie.getMovieCast().stream()
-					.map(CastMapper.castNameToCastEntity())
-					.collect(Collectors.toSet()));
-			
-			movieData.setMovieGenre(movie.getMovieGenre().stream()
-					.map(GenreMapper.genreNameToGenreEntity())
-					.collect(Collectors.toSet()));
-			
-			movieData.setMovieLanguages(movie.getMovieLanguage().stream()
-					.map(LanguageMapper.languageNameToLanguageEntity())
-					.collect(Collectors.toSet()));
-			
-			movieData.setMovieLocations(movie.getMovieLocation().stream()
-					.map(LocationMapper.locationToEnity()).collect(Collectors.toSet()));
-			
-			return movieData;
-		};
-	}
-
-
 	public static Function<MovieData, Movies> MovieDataToLandingPageMovies() {
 	return (MovieData movieData)->{
 			
@@ -87,7 +56,7 @@ public class MovieDataMapper {
 			movie.setImgUrl(movieData.getMovieUrl());
 			
 			movie.setMovieGenre(movieData.getMovieGenre().stream()
-					.map(GenreMapper.genreEntityToGenreName())
+					.map(Genre::getGenre)
 					.sorted()
 					.collect(Collectors.toList()));
 			

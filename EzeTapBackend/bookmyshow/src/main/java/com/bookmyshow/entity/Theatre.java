@@ -2,8 +2,6 @@
  * 
  */
 package com.bookmyshow.entity;
-
-import java.io.Serializable;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -42,10 +40,6 @@ public class Theatre {
 	@Column(name = "seat_count")
 	private long seatCount;
 	
-//	@ManyToMany(mappedBy = "theatreList")
-//	private Set<MovieData> movieList;
-	
-	
 	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "movie_theatre_price",
 	joinColumns = @JoinColumn(name = "theatre_id"),
@@ -60,12 +54,6 @@ public class Theatre {
 	@JoinColumn(name="location_id")
 	private Location location;
 	
-//	@ManyToMany(cascade = CascadeType.ALL)
-//	@JoinTable(name = "theatre_timing",
-//	joinColumns = @JoinColumn(name = "theatre_id"),
-//	inverseJoinColumns = @JoinColumn(name = "timing_id"))
-//	private Set<Timing> theatreTimings;
-
 	public long getId() {
 		return Id;
 	}

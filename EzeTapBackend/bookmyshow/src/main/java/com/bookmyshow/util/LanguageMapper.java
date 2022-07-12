@@ -13,9 +13,4 @@ public class LanguageMapper {
 			return language;
 		};
 	}
-
-	public static Function<Language, String> languageEntityToLanguageName() {
-		return language->language.getLanguage();
-	}
-
 }

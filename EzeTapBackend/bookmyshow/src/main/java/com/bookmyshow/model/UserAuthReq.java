@@ -15,6 +15,18 @@ public class UserAuthReq implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private String userId;
 	private String userPassword;
+	
+	
+	
+	/**
+	 * @param userId
+	 * @param userPassword
+	 */
+	public UserAuthReq(String userId, String userPassword) {
+		super();
+		this.userId = userId;
+		this.userPassword = userPassword;
+	}
 	public String getUserId() {
 		return userId;
 	}

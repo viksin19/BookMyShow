@@ -1,12 +1,14 @@
 package com.bookmyshow.serviceImpl;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.bookmyshow.entity.Genre;
+import com.bookmyshow.entity.Language;
+import com.bookmyshow.entity.Location;
+import com.bookmyshow.entity.MovieData;
 import com.bookmyshow.model.ChartData;
 import com.bookmyshow.model.ChartDataResponse;
 import com.bookmyshow.model.DashboardCardResponse;
@@ -35,9 +37,8 @@ public class DashboardServiceImpl implements DashboardService {
 	
 	@Override
 	public DashboardCardResponse getGenreCardData() {
-		//List<Genre> genreList = genreRepo.findAll();
 		List<String> cardSubTitleList = genreRepo.findAll().stream()
-				.map((genre)->genre.getGenre())
+				.map(Genre::getGenre)
 				.sorted()
 				.collect(Collectors.toList());
 		return prepareCardData(cardSubTitleList);
@@ -46,7 +47,7 @@ public class DashboardServiceImpl implements DashboardService {
 	@Override
 	public DashboardCardResponse getLanguageCardData() {
 		List<String> cardSubTitleList = languageRepo.findAll().stream()
-				.map((language)->language.getLanguage())
+				.map(Language::getLanguage)
 				.sorted()
 				.collect(Collectors.toList());
 
@@ -56,7 +57,7 @@ public class DashboardServiceImpl implements DashboardService {
 	@Override
 	public DashboardCardResponse getLocationCardData() {
 		List<String> cardSubTitleList = locationRepo.findAll().stream()
-				.map((location)->location.getCity())
+				.map(Location::getCity)
 				.sorted()
 				.collect(Collectors.toList());
 
@@ -66,7 +67,7 @@ public class DashboardServiceImpl implements DashboardService {
 	@Override
 	public DashboardCardResponse getMoviesCardData() {
 		List<String> cardSubTitleList = movieRepo.findAll().stream()
-				.map((movie)->movie.getMovieName())
+				.map(MovieData::getMovieName)
 				.sorted()
 				.collect(Collectors.toList());
 

@@ -1,7 +1,4 @@
 package com.bookmyshow.entity;
-
-import java.io.Serializable;
-
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Transient;

@@ -15,11 +15,7 @@ public class GenreMapper {
 			return genre;
 		};
 	}
-
-	public static Function<Genre, String> genreEntityToGenreName() {
-		return genre->genre.getGenre();
-	}
-
+	
 	public static Function<Genre, ChartData> genreEntityToGenreChart() {
 		return (genre)->{
 			return new ChartData(genre.getGenre(), genre.getMovies().size());

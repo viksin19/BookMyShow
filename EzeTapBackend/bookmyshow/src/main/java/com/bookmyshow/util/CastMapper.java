@@ -12,8 +12,4 @@ public class CastMapper {
 			return cast;
 		};
 	}
-
-	public static Function<Cast, String> castEntityToCastName() {
-		return (cast)->cast.getCastName();
-	}
 }

@@ -2,7 +2,6 @@
  * 
  */
 package com.bookmyshow.serviceImpl;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -22,12 +21,9 @@ import com.bookmyshow.model.MovieTheatre;
 import com.bookmyshow.model.MovieViewDetailsReq;
 import com.bookmyshow.model.Movies;
 import com.bookmyshow.repository.MovieRepo;
-import com.bookmyshow.repository.TimingRepo;
 import com.bookmyshow.service.MovieService;
-import com.bookmyshow.util.LocationMapper;
 import com.bookmyshow.util.MovieDataMapper;
 import com.bookmyshow.util.PriceMapper;
-import com.bookmyshow.util.TheatreMapper;
 
 /**
  * @author jai12
@@ -38,9 +34,6 @@ public class MovieServiceImpl implements MovieService {
 
 	@Autowired
 	private MovieRepo movieRepo;
-	
-	@Autowired
-	private TimingRepo timingRepo;
 	
 	@Autowired
 	EntityManager entityManager;
@@ -57,13 +50,7 @@ public class MovieServiceImpl implements MovieService {
 		return "Movie got added successfully.";
 	}
 
-	private void addMovie(MovieAddRequestBody movieAddReq) {
-		
-//		movieAddReq.getMovieList().stream().map(MovieDataMapper.MoviesToMovieData())
-//				.forEach(movieData -> movieRepo.save(movieData));
-//		MovieData movieData = new MovieData();
-//		movieRepo.save(movieData);
-	}
+	private void addMovie(MovieAddRequestBody movieAddReq) {}
 
 	@Override
 	public List<Movies> fetchAllMovies() {
@@ -87,12 +74,11 @@ public class MovieServiceImpl implements MovieService {
 
 	@Override
 	public MovieLocation fetchMovieViewDetaild(MovieViewDetailsReq requestBody) {
-		System.out.println(requestBody.getMovieId()+" : "+requestBody.getLocationId());
-	  List<MovieData> movieData = movieRepo.findByMovieId(requestBody.getMovieId());
+	  MovieData movieData = movieRepo.findByMovieId(requestBody.getMovieId());
 	  MovieLocation response = new MovieLocation(); 
 	  response.setLocationId(requestBody.getLocationId());
-	  movieData.forEach(movie->{
-		  movie.getMovieLocations().stream().filter(location-> location.getId()==requestBody.getLocationId()).forEach(location->{
+	  
+		  movieData.getMovieLocations().stream().filter(location-> location.getId()==requestBody.getLocationId()).forEach(location->{
 			  response.setCity(location.getCity());
 			  
 			  Set<MovieTheatre> theatreList = location.getTheatreList().stream().map((Theatre theatre)->{
@@ -112,7 +98,6 @@ public class MovieServiceImpl implements MovieService {
 					  .collect(Collectors.toSet());
                 response.setTheatreList(theatreList);
 		  });
-	  });
 		return response;
 	}
 	

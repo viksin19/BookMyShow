@@ -7,20 +7,6 @@ import com.bookmyshow.model.MoviePrice;
 
 
 public class PriceMapper {
-
-	public static Function<MoviePrice,TheatrePrice > moviePriceToPriceEntity() {
-		
-		return (price)->{
-			TheatrePrice TheatrePrice = new TheatrePrice();
-			TheatrePrice.setSeatType(price.getSeatType());
-			TheatrePrice.setSeatPrice(price.getSeatPrice());
-			
-			return TheatrePrice;
-		};
-		
-		
-	}
-
 	public static Function<TheatrePrice,MoviePrice > priceEntityToMoviePrice() {
 		
 		return (price)->{
@@ -29,9 +15,7 @@ public class PriceMapper {
 			moviePrice.setSeatPrice(price.getSeatPrice());
 			
 			return moviePrice;
-		};
-		
-		
+		};			
 	}
 
 }

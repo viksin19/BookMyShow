@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="row">
+        <span class="span-title">
+          Recomended movies
+        </span>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div class="row displayFlex">
+
+        <!-- Start copying -->
+        <ng-container *ngFor="let movie of recomendedMovieList"> 
+           <div class="movieCardList">
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <!-- <div mat-card-avatar class="example-header-image"></div> -->
+                  <mat-card-title>{{movie.movieName}}</mat-card-title>
+                  <mat-card-subtitle>{{movie.movieGenre}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image class="imageSize" src="{{movie.imgUrl}}" alt="{{movie.movieName}}">
+                <mat-card-content>
+                  <p>
+               <!-- Description -->
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>Likes: {{movie.movieLikes}}</button>
+                  <button mat-button>Rating: {{movie.movieRating }}/5</button>
+                </mat-card-actions>
+              </mat-card>
+           </div>   
+        </ng-container>
+        <!-- End Copying -->
+    </div>
+</div>

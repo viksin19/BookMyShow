@@ -1,0 +1,77 @@
+mat-toolbar {
+    background: #2e3640;
+    color: white;
+  }
+  .cGzEUR{
+    width: 12%;
+    min-width: 10%;
+    vertical-align: middle;
+    display: block;
+  }
+  mat-sidenav {
+    margin: 10px;
+    width: 16%;
+    border-right: none;
+    background: #1f252c;
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+  .signIn{
+   width: 86%;
+   display: flex;
+   flex-direction: row-reverse;
+  }
+  .navItem{
+    padding-left: 10%;
+  }
+  .content {
+    height: calc(100vh - 65px);
+    border-radius: 16px;
+    margin: 16px;
+    margin-left: 30px;
+  
+    padding: 10px;
+  
+    overflow: auto;
+  }
+  
+  mat-sidenav-container {
+    height: calc(100vh - 65px);
+  }
+  
+  .menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+  }
+  
+  .avatar {
+    margin-top: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .name {
+    margin-top: 8px;
+    font-weight: normal;
+  }
+  
+  .designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgrey;
+  }
+  
+  mat-divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .mat-drawer-backdrop.mat-drawer-shown{
+    background-color: aliceblue;
+  }

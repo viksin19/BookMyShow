@@ -1,0 +1,86 @@
+.span-title{
+    word-break: break-word;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 550;
+    margin: 3%;
+    line-height: 1.17;
+}
+.row{
+    display: flex;
+    width: 100%;
+}
+.col-4{
+width: 35%;
+}
+.col-8{
+    width: 60%;
+}
+.display-block{
+    display: block;
+}
+.blue-card{
+
+    background-color: var(--cui-primary,#11068b);
+    background-image: linear-gradient(45deg,var(--cui-primary-start,#4230e2) 0,var(--cui-primary-stop,#130884 100%))
+}
+.orange-card{
+    background-color: var(--cui-warning,#e78f14);
+    background-image: linear-gradient(45deg,var(--cui-warning-start,#ffc038) 0,var(--cui-warning-stop,#f6960b 100%));
+}
+.danger-card{
+    background-color: var(--cui-danger,#d93737);
+    background-image: linear-gradient(45deg,var(--cui-danger-start,#e36464) 0,var(--cui-danger-stop,#d93737 100%))
+}
+.info-card{
+    background-color: var(--cui-info,#075da3);
+    background-image: linear-gradient(45deg,var(--cui-info-start,#39f) 0,var(--cui-info-stop,#055ba2 100%));
+}
+.success-card{
+    background-color: var(--cui-info,#09b838);
+    background-image: linear-gradient(45deg,var(--cui-info-start,#3b884f) 0,var(--cui-info-stop,#03ad31 100%));
+}
+.card{
+    flex: 0 0 auto;
+    width: 23%;
+    border: 0;
+    height: 160px;
+    margin: 1%;
+    border-radius: 3%;
+    box-shadow: #afafb0;
+}
+.card-title{
+    word-break: break-word;
+    color: rgb(243, 235, 235);
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 550;
+    margin-left: 5%;
+    margin-top: 7%;
+    line-height: 1.17;
+}
+.card-body{
+    word-break: break-word;
+    color: rgb(243, 235, 235);
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-top: 2%;
+    line-height: 1.17;
+}
+.card-subbody{
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.sub-content{
+    flex: auto;
+    color: rgb(255, 252, 252);
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.1; 
+}

@@ -1,0 +1,26 @@
+<div class="display-block">
+    <div class="row">
+        <span class="span-title">
+            Dashboard
+          </span>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="row">
+    <ng-container *ngFor="let title of cardTitles">
+    <div class="card" [ngClass]="title.cardClass">
+     <dashboard-card [titleinput]="title.title"></dashboard-card>
+     </div>
+    </ng-container>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="row">
+        <div class="col-4">
+                <genre-dashboard></genre-dashboard>
+        </div>
+        <div class="col-8">
+            <div style="display: block">
+                <city-movie-chart></city-movie-chart>
+              </div>
+        </div>
+    </div>
+</div>

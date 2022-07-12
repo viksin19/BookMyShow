@@ -1,0 +1,138 @@
+.span-title{
+    word-break: break-word;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 550;
+    margin: 1%;
+    line-height: 1.17;
+}
+table {
+    width: 100%;
+}
+.table-margin{
+    margin: 2%;
+}
+
+
+/* Movie details css */
+ul{
+    display: flex;
+}
+.ieoDvE {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-bottom: 5px;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.kHnVlg {
+    display: flex;
+    cursor: pointer;
+    margin: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    position: relative;
+}
+.li-item {
+    display: flex;
+    cursor: pointer;
+    margin: 8px 12px;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+.location-image {
+    height: 100%;
+    max-width: 100%;
+}
+.ul-item {
+    width: 95%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 8px 8px 0px;
+}
+.city-name {
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    max-width: 110px;
+    word-break: break-word;
+    text-align: center;
+}
+
+.display-flex{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.col-3{
+    max-width: 30%;
+    min-width: 25%;
+
+}
+.col-2{
+    max-width: 25%;
+    min-width: 20%;
+}
+.col-4{
+    max-width: 40%;
+    min-width: 35%;
+}
+.col-6{
+    width: 60%;
+}
+.col-2,.col-3,.col-4{
+    margin: 1%;
+}
+.gold-icon {
+    background: #ffc610;
+}
+.silver-icon {
+    background: #646464;
+}
+
+.platinum-icon {
+    background: #7b4040;
+}
+.gold-icon,.silver-icon,.platinum-icon{
+    width: 7px;
+    height: 7px;
+    margin: 5%;
+    border-radius: 50%;
+}
+.imageSize{
+    width: 130px;
+    height: 135px;
+}
+.dialog-title{
+    display: block;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 550;
+    margin: 1%;
+    line-height: 1.17
+} 
+.dialog-subtitle{
+    color: #7b7b7b;
+    margin: 1%;
+} 
+.mat-dialog-content{
+    overflow: hidden !important;
+    margin: 1% !important;
+}

@@ -1,0 +1,64 @@
+
+<div class="display-flex">
+    <div class="col-3">
+        <img mat-card-image class="imageSize" 
+        src="{{movieData.imgUrl}}" 
+        alt="{{movieData.movieName}}">
+    </div>
+    <div class="col-6">
+        <span class="dialog-title">{{movieData.movieName}}</span>
+        <span class="dialog-subtitle">{{movieData.movieGenre}}</span><br>
+        <span class="dialog-subtitle">Duration: {{movieData.movieDuration}} mins</span><br>
+        <span class="dialog-subtitle">Rating: {{movieData.movieRating}}/5</span>
+
+    </div>
+</div>
+<mat-divider></mat-divider>
+<mat-dialog-content class="mat-typography">
+
+    
+    <button mat-button (click)="enableLocationSelection()">{{locationSelected}}</button>
+    <ng-container *ngIf="!isLocationSelected">
+        <ul class="ul-item">
+            <ng-container *ngFor="let location of availableLocation">
+                <li class="li-item">
+                    <div class="kHnVlg">
+                        <div class="ieoDvE" (click)="onSelectLocation(location)">
+                            <img src="{{location.url}}"
+                                alt="{{location.city}}" 
+                                class="location-image">
+                            </div>
+                            <span class="city-name">{{location?.city}}</span>
+                    </div>
+                </li>
+            </ng-container>
+        </ul>
+    </ng-container>
+    <ng-container *ngIf="isLocationSelected">
+   <ng-container *ngFor="let theatre of theatreList">
+    <div class="display-flex">
+        <div class="col-4">
+            <div class="row"><h4>{{theatre.theatreName}}</h4></div>
+            <div class="row"><span class="dialog-subtitle">{{theatre.theatreAddress}}</span></div>
+        </div>
+        <div class="col-3">
+            <ng-container *ngFor="let time of theatre.movieTimings">
+             <button mat-stroked-button color="primary">{{time}}</button>    
+            </ng-container>
+        </div>
+        <div class="col-2">
+            <ng-container *ngFor="let price of theatre.moviePrice">  
+            <div class="row display-flex"><div class="gold-icon"></div>
+            <div>{{price?.seatType}}: {{price?.seatPrice}}</div>
+        </div>
+            </ng-container>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+   </ng-container>     
+
+    </ng-container>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

@@ -1,0 +1,19 @@
+
+ <ng-container *ngIf="showCard">
+        <div class="card-title">
+            {{title}}
+        </div>
+        <div class="card-body">
+            {{cardValue}}
+        </div>
+        <ng-container *ngIf="showCardSubBody">
+        <div class="card-subbody">
+            <ng-container *ngFor="let cardSubValue of cardSuBody">
+               <div class="sub-content">
+                {{cardSubValue}},
+            </div>
+            </ng-container>
+        </div>
+        </ng-container>
+</ng-container> 
+

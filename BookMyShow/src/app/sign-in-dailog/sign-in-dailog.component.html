@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Sign In</h2>
+<mat-divider></mat-divider>
+<mat-dialog-content class="mat-typography">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>User name</mat-label>
+                <input matInput placeholder="username" type="text" formControlName="username">
+              </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="password" type="password" formControlName="password">
+          </mat-form-field>
+          </div>
+        <div class="form-group">
+<!--             
+            <button mat-raised-button color="accent" [disabled]="!loginForm.valid">
+                Continue
+            </button> -->
+        </div>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button id="signin-dialog-close"  mat-button mat-dialog-close>Cancel</button>
+  <button mat-raised-button color="accent" [disabled]="!loginForm.valid" (click)="onSubmit()" cdkFocusInitial>Continue</button>
+</mat-dialog-actions>

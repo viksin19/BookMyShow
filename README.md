@@ -29,3 +29,26 @@ Pages
 • Options to sort on
 • Language
 • Name
+
+
+#Front-end  - Angular 14, Angular Material, Chart.js, ng2-chart.js
+Developed Single page application BookMyshow Admin portal for Admin.
+
+1. Landing page - HomeComponent
+2. SideNavBar + Tab+ router-outlet -- AppComponent
+3. SignIn Dailog for Authenticating Admin.
+4. Dashboard - DashBoardComponent [It contains Different charts component ]
+5.MovieList - MovieListComponent
+6.ViewDetails - MovieListComponent>Movie-List-dailog.Component
+
+7. DashboardService and MovieService is for  providing services to each Component and backend api calls.
+
+
+#Backend - Spring Boot, MySQL
+run application at port: 8000
+In application.properties change  ddl-auto from update to create.
+Before that creatre a bookmyshow database schema in MySQL.
+
+For All the table csv file is provide. import the data in respective table.
+
+

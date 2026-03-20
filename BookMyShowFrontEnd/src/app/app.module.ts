@@ -8,17 +8,18 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { HomeComponent } from './home/home.component';
 import { MovieService } from './MovieServices/movie-service.service';
-import { SignInDailogComponent } from './sign-in-dailog/sign-in-dailog.component';
+import { SignInDialogComponent } from './sign-in-dialog/sign-in-dialog.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgChartsModule } from 'ng2-charts';
-import { MovieDetailsDailog } from './movie-list/movie-details-dailogue/movie-details.component';
+import { MovieDetailsDialog } from './movie-list/movie-details-dialogue/movie-details.component';
 import { DashboardService } from './Dashboard-Service/dashboard.service';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { DashboardCard } from './dashboard/cards/dashboard-card';
 import { ListToStringPipe } from './dashboard/pipes/listToString.pipe';
 import { UserService } from './User/user.service';
 import { GenreDashboardComponent } from './dashboard/genre-dashboard-chart/genre-dashboard.component';
 import { LocationChartComponent } from './dashboard/city-movie-chart/city-movie-chart.component';
+import { SecurityInterceptor } from './interceptors/security.interceptor';
 
 @NgModule({
   declarations: [
@@ -26,8 +27,8 @@ import { LocationChartComponent } from './dashboard/city-movie-chart/city-movie-
     DashboardComponent,
     MovieListComponent,
     HomeComponent,
-    SignInDailogComponent,
-    MovieDetailsDailog,
+    SignInDialogComponent,
+    MovieDetailsDialog,
     DashboardCard,
     ListToStringPipe,
     GenreDashboardComponent,
@@ -42,7 +43,17 @@ import { LocationChartComponent } from './dashboard/city-movie-chart/city-movie-
     NgChartsModule,
     HttpClientModule
   ],
-  providers: [MovieService,DashboardService,UserService],
+  providers: [
+    MovieService,
+    DashboardService,
+    UserService,
+    // Register security interceptor
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: SecurityInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
